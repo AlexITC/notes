@@ -1,0 +1,9 @@
+
+# publish library
+mill playsonify.publish --release false $(cat ~/.ivy2/.mill-sonatype.txt)
+
+# test all
+mill __.test
+
+# avoid breaking issues
+mill -i __.test

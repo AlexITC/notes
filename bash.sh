@@ -27,3 +27,6 @@ grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b"
 
 # convert video to mp3
 ffmpeg -i video.mp4 audio.mp3
+
+# trim video
+ffmpeg -i input.mp4 -ss 00:00:11 -to 00:01:12 -c copy output.mp4

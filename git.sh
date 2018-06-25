@@ -4,6 +4,12 @@ git config user.name "Alexis Hernandez"
 git config user.email "[EMAIL]"
 git config pull.rebase true
 
+# use pgp2 for signing work
+git config --global gpg.program gpg2
+
+# sign commits by default
+git config commit.gpgsign true
+
 # delete remote branch
 git push origin --delete remote-branch
 
@@ -37,3 +43,7 @@ git push
 
 # change log between tags
 git log v2018.01.14..v2018.01.21 --oneline
+
+# submodules
+git submodule init
+git submodule update --init

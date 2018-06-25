@@ -1,0 +1,4 @@
+gpg --list-keys
+gpg --keyserver keyserver.ubuntu.com --send-keys 248C9723
+gpg --keyserver http://pool.sks-keyservers.net:11371 --send-keys 248C9723
+http://pool.sks-keyservers.net:11371/

@@ -8,3 +8,6 @@ Update `cassandra/cassandra-env.sh`
 MAX_HEAP_SIZE="512M"
 HEAP_NEWSIZE="256M"
 ```
+
+# show data center name
+`select data_center from system.local;`
