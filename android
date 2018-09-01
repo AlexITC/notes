@@ -1,0 +1,13 @@
+# connect to the device
+adb shell
+
+# reboot device
+adb reboot
+
+# unroot device
+adb shell
+su
+mount -o rw,remount /system
+rm /system/app/superuser.apk
+rm /system/bin/su
+rm /system/xbin/su
