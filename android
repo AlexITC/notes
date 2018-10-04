@@ -11,3 +11,7 @@ mount -o rw,remount /system
 rm /system/app/superuser.apk
 rm /system/bin/su
 rm /system/xbin/su
+
+# restart adb
+sudo adb kill-server
+sudo adb start-server

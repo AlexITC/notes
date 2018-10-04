@@ -30,3 +30,12 @@ ffmpeg -i video.mp4 audio.mp3
 
 # trim video
 ffmpeg -i input.mp4 -ss 00:00:11 -to 00:01:12 -c copy output.mp4
+
+# merge pdfs
+pdftk 01.pdf 02.pdf 03.pdf cat output all.pdf
+
+# find bound ports
+netstat -lntp
+
+# find bound sockets
+ss -ap
