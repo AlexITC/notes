@@ -23,3 +23,5 @@ sudo apt-get install python-simplejson
 ansible-vault encrypt config/alerts-server.env
 
 ansible-vault edit foo.yml
+
+ansible-vault encrypt_string --vault-id .vault 'string'

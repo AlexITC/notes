@@ -28,6 +28,9 @@ grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b"
 # convert video to mp3
 ffmpeg -i video.mp4 audio.mp3
 
+# convert all videos to mp3
+for file in *.mp4; do ffmpeg -i "$file" "$file.mp3"; done
+
 # trim video
 ffmpeg -i input.mp4 -ss 00:00:11 -to 00:01:12 -c copy output.mp4
 
@@ -39,3 +42,9 @@ netstat -lntp
 
 # find bound sockets
 ss -ap
+
+# run command for each file in current directory
+for file in *; do echo "$file"; done
+
+# convert epoch (seconds) to date
+date -d @1546097664

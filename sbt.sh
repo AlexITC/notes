@@ -12,3 +12,6 @@ sbt "inspect tree clean"
 set offline := true
 publishM2
 publishLocal
+
+# run with a custom config (for typesafe config)
+sbt -Dconfig.resource="custom.conf" run
