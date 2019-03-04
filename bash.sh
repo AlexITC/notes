@@ -48,3 +48,23 @@ for file in *; do echo "$file"; done
 
 # convert epoch (seconds) to date
 date -d @1546097664
+
+# print lines util the patern is found (including the pattern)
+git log | sed '/7467bdc51ad57371ef20bffc2f79cc4a792eb97f/q'
+
+# print lines until the pattern is found (excluding the pattern)
+git log | sed '/7467bdc51ad57371ef20bffc2f79cc4a792eb97f/Q'
+
+## disable ipv6, https://unix.stackexchange.com/a/366303/199541
+vim /etc/sysctl.conf
+
+# add
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 1
+
+# reload conf
+sudo sysctl -p
+
+# link directory
+ln -s /source /link

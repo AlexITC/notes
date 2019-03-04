@@ -34,3 +34,6 @@ openssl pkcs8 -topk8 -inform PEM -outform DER -in filename -out filename -nocryp
 
 # build openssl 1.1.0 to have the CCM8 ciphersuite
 ./openssl s_client -cipher "ECDHE-ECDSA-AES128-CCM8" -connect localhost:5689
+
+# gener+ certificate in one step
+openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -nodes
