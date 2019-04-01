@@ -15,3 +15,6 @@ publishLocal
 
 # run with a custom config (for typesafe config)
 sbt -Dconfig.resource="custom.conf" run
+
+# exclude files from compiling
+excludeFilter := HiddenFileFilter || "example*"

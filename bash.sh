@@ -68,3 +68,6 @@ sudo sysctl -p
 
 # link directory
 ln -s /source /link
+
+# remove metadata from photos
+exiftool -all= photo.jpg
