@@ -9,3 +9,6 @@ ng set --global packageManager=yarn
 
 # create keep app
 ng new keep
+
+# force live reload
+ng serve --poll=2000

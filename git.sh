@@ -10,6 +10,9 @@ git config --global gpg.program gpg2
 # sign commits by default
 git config commit.gpgsign true
 
+# select key for signing
+git config user.signingkey KEYID
+
 # delete remote branch
 git push origin --delete remote-branch
 

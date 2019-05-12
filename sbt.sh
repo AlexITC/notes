@@ -18,3 +18,6 @@ sbt -Dconfig.resource="custom.conf" run
 
 # exclude files from compiling
 excludeFilter := HiddenFileFilter || "example*"
+
+# allows `sbt console` import packages without a fatal warning due to unused imports
+scalacOptions in (Compile, console) ~= (_ filterNot (_ == "-Ywarn-unused-import"))

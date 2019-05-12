@@ -65,6 +65,7 @@ net.ipv6.conf.lo.disable_ipv6 = 1
 
 # reload conf
 sudo sysctl -p
+## end
 
 # link directory
 ln -s /source /link
