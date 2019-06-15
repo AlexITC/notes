@@ -72,3 +72,13 @@ ln -s /source /link
 
 # remove metadata from photos
 exiftool -all= photo.jpg
+
+# resize unpartitioned volume
+- this must display ext4: `sudo lsblk --fs /dev/disk/by-id/scsi-0DO_Volume_volume-nyc1-01`
+- resize: `sudo resize2fs /dev/disk/by-id/scsi-0DO_Volume_volume-nyc1-01`
+
+# forward port 3000 from my-server to the local port 30000
+ssh -nNT -L 30000:localhost:3000 my-server
+
+# sync folder from a server over ssh to a local folder
+rsync -avzhe ssh --progress the-server:/home/ubuntu/bcoin-data .

@@ -1,4 +1,7 @@
 
+# Tricks
+https://ohshitgit.com/
+
 # after downloading a project
 git config user.name "Alexis Hernandez"
 git config user.email "[EMAIL]"

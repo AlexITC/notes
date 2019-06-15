@@ -125,3 +125,11 @@ Source: https://dba.stackexchange.com/a/218065/168786
 
 ## Don't do this
 https://wiki.postgresql.org/wiki/Don%27t_Do_This
+
+
+# Logging
+
+## A user shouldn't be able to produce warning logs
+There are tools that trigger alerts based on warnings or errors, malicious users can get us a lot of noise if we let them produce these logs.
+
+On the case of Sentry, it can get us a huge bill due to the amount of supported events on the plan.
