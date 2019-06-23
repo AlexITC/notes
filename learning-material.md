@@ -17,3 +17,7 @@
 - https://samsaffron.com/archive/2019/05/15/tests-that-sometimes-fail
 - https://martinfowler.com/articles/mocksArentStubs.html
 - Fast tests for slow services: why you should use verified fakes: https://codewithoutrules.com/2016/07/31/verified-fakes/
+
+# Misc
+- https://kevv.net/you-probably-dont-need-recaptcha/
+- Making sense of the USB standard: https://www.beyondlogic.org/usbnutshell/usb1.shtml

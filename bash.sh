@@ -82,3 +82,6 @@ ssh -nNT -L 30000:localhost:3000 my-server
 
 # sync folder from a server over ssh to a local folder
 rsync -avzhe ssh --progress the-server:/home/ubuntu/bcoin-data .
+
+# sync folder recursively
+rsync --progress --recursive /var/lib/postgresql/9.6/main /mnt/volume_bitcoin_explorer_lite/postgres/
