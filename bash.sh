@@ -73,6 +73,9 @@ ln -s /source /link
 # remove metadata from photos
 exiftool -all= photo.jpg
 
+# remove metadata from all photos in current directory
+for file in *; do exiftool -all= "$file"; done
+
 # resize unpartitioned volume
 - this must display ext4: `sudo lsblk --fs /dev/disk/by-id/scsi-0DO_Volume_volume-nyc1-01`
 - resize: `sudo resize2fs /dev/disk/by-id/scsi-0DO_Volume_volume-nyc1-01`
