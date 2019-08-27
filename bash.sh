@@ -88,3 +88,13 @@ rsync -avzhe ssh --progress the-server:/home/ubuntu/bcoin-data .
 
 # sync folder recursively
 rsync --progress --recursive /var/lib/postgresql/9.6/main /mnt/volume_bitcoin_explorer_lite/postgres/
+
+# passwordless sudo on sudoers
+- Edit with: `sudo visudo`
+- Update the `%sudo` line to `%sudo   ALL=(ALL:ALL) NOPASSWD: ALL`
+
+# find available shared libraries
+- ldconfig -p
+
+# zip files with password
+zip --encrypt secure.zip file1 file2 file3

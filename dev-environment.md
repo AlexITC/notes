@@ -18,6 +18,9 @@
 - SSH Tunneling (worth while dealing with servers): https://blog.trackets.com/2014/05/17/ssh-tunnel-local-and-remote-port-forwarding-explained-with-examples.html
 - SSH Config file: https://nerderati.com/2011/03/17/simplify-your-life-with-an-ssh-config-file/
 - Install postgres: http://devopspy.com/linux/install-postgresql-9-6-ubuntu-16-04-lts/
+- Design diagrams with markdown: https://blog.anoff.io/2018-07-31-diagrams-with-plantuml/
+- Versioning large files on git: https://git-lfs.github.com/
+- Whilelist USB devices, block everything else: https://roussos.cc/2019/08/19/usbguard/
 
 # Processes
 - Use SSH keys for Github: https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account

@@ -9,7 +9,7 @@ You must be sure to break ties by unique fields while sorting results.
 
 TOC.
 
-## Reject requests having unknown
+## Reject requests having unknown/unexpected arguments
 This applies to JSON arguments as well as query arguments, it will allow clients to know if they are misspelling the argument names.
 
 A drawback is that removing fields are likely to break clients but you are unlikely to do that because it breaks the API compatibility anyway.
@@ -17,6 +17,11 @@ A drawback is that removing fields are likely to break clients but you are unlik
 ## Avoid offset-based pagination, use keyset pagination
 - http://allyouneedisbackend.com/blog/2017/09/24/the-sql-i-love-part-1-scanning-large-table/
 - https://coderwall.com/p/lkcaag/pagination-you-re-probably-doing-it-wrong
+
+TBC.
+
+## Consider returning errors when the keyset pagination argument doesn't exists
+If you have an argument like, `lastSeenId` and the id is not stored, it is likely that there is an error on the client side which can go unnoticed, returning an error allows to catch it.
 
 TBC.
 

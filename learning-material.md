@@ -28,3 +28,12 @@
 - Elliptic Curve Cryptography: https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/
 - http://www.smashcompany.com/technology/why-are-software-developers-confused-by-kafka-and-immutable-logs
 - https://www.defmacro.org/2019/03/26/startup-checklist.html
+- https://chris.beams.io/posts/git-commit/
+- https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api
+- A game to learn CSS grid: https://cssgridgarden.com/
+- Git cheatsheet: https://github.github.com/training-kit/downloads/github-git-cheat-sheet/
+- Tech interview handbook: https://yangshun.github.io/tech-interview-handbook/
+- Postgres: https://theartofpostgresql.com/
+- Designing a JavaScript plugin system for web apps: https://www.figma.com/blog/how-we-built-the-figma-plugin-system/
+- Retry with exponential backoff in Scala: https://medium.com/@john.m.murray786/exponential-back-off-with-scala-futures-7426340d0069
+- Retry with exponential backoff: https://blog.miguelgrinberg.com/post/how-to-retry-with-class

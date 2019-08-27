@@ -7,3 +7,6 @@ mill __.test
 
 # avoid breaking issues
 mill -i __.test
+
+# IntelliJ
+mill mill.scalalib.GenIdea/idea
