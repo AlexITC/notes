@@ -21,3 +21,6 @@ excludeFilter := HiddenFileFilter || "example*"
 
 # allows `sbt console` import packages without a fatal warning due to unused imports
 scalacOptions in (Compile, console) ~= (_ filterNot (_ == "-Ywarn-unused-import"))
+
+# exclude transitive dependencies while importing a library
+libraryDependencies += "com.twitter" %% "finagle-thriftmux" % "6.16.0" exclude("org.slf4j", "slf4j-jdk14")
