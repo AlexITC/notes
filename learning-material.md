@@ -37,3 +37,4 @@
 - Designing a JavaScript plugin system for web apps: https://www.figma.com/blog/how-we-built-the-figma-plugin-system/
 - Retry with exponential backoff in Scala: https://medium.com/@john.m.murray786/exponential-back-off-with-scala-futures-7426340d0069
 - Retry with exponential backoff: https://blog.miguelgrinberg.com/post/how-to-retry-with-class
+- How to do code reviews by Google: https://google.github.io/eng-practices/review/reviewer/
