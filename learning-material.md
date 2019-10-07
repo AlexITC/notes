@@ -3,7 +3,10 @@
 - https://www.coursera.org/learn/progfun2
 - https://danielwestheide.com/scala/neophytes.html
 - https://underscore.io/books/scala-with-cats/
+- https://underscore.io/books/creative-scala
+- https://underscore.io/books/essential-scala
 - http://gigiigig.github.io/tlp-step-by-step/introduction.html
+- https://www.beyondthelines.net/computing/scala-future-and-execution-context/
 
 # Blockchain
 - https://www.coursera.org/learn/blockchain-basics/
@@ -38,3 +41,6 @@
 - Retry with exponential backoff in Scala: https://medium.com/@john.m.murray786/exponential-back-off-with-scala-futures-7426340d0069
 - Retry with exponential backoff: https://blog.miguelgrinberg.com/post/how-to-retry-with-class
 - How to do code reviews by Google: https://google.github.io/eng-practices/review/reviewer/
+- Syslog: https://devconnected.com/syslog-the-complete-system-administrator-guide/
+- ES6: https://hacks.mozilla.org/category/es6-in-depth/
+- OpenAPI vs gRPC: https://servicesblog.redhat.com/2019/01/31/comparing-openapi-with-grpc/

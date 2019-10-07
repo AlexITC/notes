@@ -2,6 +2,9 @@
 # connect with postgres user
 `sudo -u postgres psql`
 
+# change password
+`ALTER USER user_name WITH PASSWORD 'new_password';`
+
 # psql config
 `sudo -u postgres vim /etc/postgresql/9.6/main/pg_hba.conf`
 

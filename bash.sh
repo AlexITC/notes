@@ -98,3 +98,9 @@ rsync --progress --recursive /var/lib/postgresql/9.6/main /mnt/volume_bitcoin_ex
 
 # zip files with password
 zip --encrypt secure.zip file1 file2 file3
+
+# diff the same repo
+diff -ENwbur repos1/ repos2/
+
+# resize image without keeping aspect ratio
+convert paso-3.png -resize 1280x800\! 1280x800/paso-3.png

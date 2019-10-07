@@ -53,3 +53,6 @@ git log v2018.01.14..v2018.01.21 --oneline
 # submodules
 git submodule init
 git submodule update --init
+
+# update branches from remote
+git fetch --all --prune
