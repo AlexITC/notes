@@ -7,6 +7,7 @@
 - https://underscore.io/books/essential-scala
 - http://gigiigig.github.io/tlp-step-by-step/introduction.html
 - https://www.beyondthelines.net/computing/scala-future-and-execution-context/
+- Akka A to Z, webinar: https://www.youtube.com/watch?v=xddHqIcnvHw whitepaper: https://www.lightbend.com/white-papers-and-reports/akka-a-to-z-the-architects-guide-to-designing-building-and-running-reactive-systems
 
 # Blockchain
 - https://www.coursera.org/learn/blockchain-basics/
@@ -44,3 +45,4 @@
 - Syslog: https://devconnected.com/syslog-the-complete-system-administrator-guide/
 - ES6: https://hacks.mozilla.org/category/es6-in-depth/
 - OpenAPI vs gRPC: https://servicesblog.redhat.com/2019/01/31/comparing-openapi-with-grpc/
+- Use Wireguard as home vpn: https://mikkel.hoegh.org/2019/11/01/home-vpn-server-wireguard

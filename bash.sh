@@ -104,3 +104,9 @@ diff -ENwbur repos1/ repos2/
 
 # resize image without keeping aspect ratio
 convert paso-3.png -resize 1280x800\! 1280x800/paso-3.png
+
+# count non-error logs on scala
+echo `expr $(cat logs/application.log | wc -l) - $(grep -E "java|scala|error|exception" logs/application.log | wc -l)`
+
+# create a ssh tunnel, local port 10002 is forwarded to the local 10002 port on the server-1
+ssh -nNT -L 10002:localhost:10002 server-1

@@ -10,3 +10,6 @@ mill -i __.test
 
 # IntelliJ
 mill mill.scalalib.GenIdea/idea
+
+# compile mill, which stores ~/mill-release as the compiled app
+sh ci/publish-local.sh

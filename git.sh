@@ -56,3 +56,9 @@ git submodule update --init
 
 # update branches from remote
 git fetch --all --prune
+
+# clone single tag
+git clone -b '1.22' --single-branch --depth 1 https://github.com/google/leveldb.git
+
+# get current commit hash
+git rev-parse HEAD
