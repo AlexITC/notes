@@ -46,3 +46,4 @@
 - ES6: https://hacks.mozilla.org/category/es6-in-depth/
 - OpenAPI vs gRPC: https://servicesblog.redhat.com/2019/01/31/comparing-openapi-with-grpc/
 - Use Wireguard as home vpn: https://mikkel.hoegh.org/2019/11/01/home-vpn-server-wireguard
+- https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare/

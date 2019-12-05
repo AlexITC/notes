@@ -2,6 +2,9 @@
 # connect with postgres user
 `sudo -u postgres psql`
 
+# connect on custom host and port
+`psql -p 15432 -U postgres -h localhost`
+
 # change password
 `ALTER USER user_name WITH PASSWORD 'new_password';`
 
