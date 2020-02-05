@@ -21,6 +21,9 @@
 - Design diagrams with markdown: https://blog.anoff.io/2018-07-31-diagrams-with-plantuml/
 - Versioning large files on git: https://git-lfs.github.com/
 - Whilelist USB devices, block everything else: https://roussos.cc/2019/08/19/usbguard/
+- Scala and Bazel: https://scalac.io/set-up-bazel-build-tool-for-scala-project/
+- Make tips: https://tech.davis-hansson.com/p/make/
+- Bash strict mode: http://redsymbol.net/articles/unofficial-bash-strict-mode/
 
 # Processes
 - Use SSH keys for Github: https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account

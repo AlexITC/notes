@@ -110,3 +110,9 @@ echo `expr $(cat logs/application.log | wc -l) - $(grep -E "java|scala|error|exc
 
 # create a ssh tunnel, local port 10002 is forwarded to the local 10002 port on the server-1
 ssh -nNT -L 10002:localhost:10002 server-1
+
+# view log for a systemd service
+sudo journalctl -f -u lssd
+
+# show key fingerprins from ssh known hosts
+ssh-keygen -l -f ~/.ssh/known_hosts

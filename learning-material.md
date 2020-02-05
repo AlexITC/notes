@@ -8,6 +8,8 @@
 - http://gigiigig.github.io/tlp-step-by-step/introduction.html
 - https://www.beyondthelines.net/computing/scala-future-and-execution-context/
 - Akka A to Z, webinar: https://www.youtube.com/watch?v=xddHqIcnvHw whitepaper: https://www.lightbend.com/white-papers-and-reports/akka-a-to-z-the-architects-guide-to-designing-building-and-running-reactive-systems
+- Play-anorm architecture: https://old.reddit.com/r/scala/comments/e7x4hi/play_questions_about_the_dao_layer/fa99bi5/
+- Union types with type level programming: https://humanreadablemag.com/issues/1/articles/unionizing-for-pleasure-and-profit
 
 # Blockchain
 - https://www.coursera.org/learn/blockchain-basics/
@@ -15,11 +17,15 @@
 - https://unwttng.com/what-is-bitcoin-ethereum
 - http://earlz.net/view/2017/07/27/1904/the-missing-explanation-of-proof-of-stake-version
 
+# Linux
+-  LPI Linux Essentials Certification: https://linuxacademy.com/cp/modules/view/id/346
+
 # Http
 - Caching Headers: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control
 - https://www.twilio.com/blog/a-http-headers-for-the-responsible-developer
 - Scan your website for security issues: https://observatory.mozilla.org
 - Scan your website for usability: https://developers.google.com/speed/pagespeed/insights/
+- Resource Oriented Design: https://cloud.google.com/apis/design/resources
 
 # Testing
 - https://samsaffron.com/archive/2019/05/15/tests-that-sometimes-fail
