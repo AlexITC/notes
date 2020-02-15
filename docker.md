@@ -15,6 +15,12 @@ docker run -p 50051:50051 --entrypoint "/bin/bash" -it alexitc/lssd
 # Start a container sharing the localhost network
 docker run --network host -it alexitc/lssd
 
+# Run container mounting folders to the /out and /protos container folders
+docker run --rm \
+  -v $(pwd)/out:/out \         
+  -v $(pwd)/src/lightningswapsdaemon/Protos:/protos \
+  pseudomuto/protoc-gen-doc
+
 # Copy file to container
 docker cp foo.txt containerid:/foo.txt
 

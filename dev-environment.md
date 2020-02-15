@@ -25,6 +25,11 @@
 - Make tips: https://tech.davis-hansson.com/p/make/
 - Bash strict mode: http://redsymbol.net/articles/unofficial-bash-strict-mode/
 
+# Expose your services running locally to the internet
+- Expose your local server: https://localtunnel.github.io/www/
+- Expose your local server: https://ngrok.com/
+- Receive webhooks on your local server: https://smee.io/
+
 # Processes
 - Use SSH keys for Github: https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account
 
