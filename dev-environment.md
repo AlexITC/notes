@@ -32,6 +32,7 @@
 
 # Processes
 - Use SSH keys for Github: https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account
+- Watch for file changes in large workspace https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc
 
 # IDEs
 - Visual Studio Code: https://code.visualstudio.com/
