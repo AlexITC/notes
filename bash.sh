@@ -116,3 +116,9 @@ sudo journalctl -f -u lssd
 
 # show key fingerprins from ssh known hosts
 ssh-keygen -l -f ~/.ssh/known_hosts
+
+# take matched regex only with grep (took 5 ms)
+grep -o 'Request.*took*.ms'
+
+# Clean logs in the form Request X took Y ms
+cat logs/application.log | grep -v Ping | grep -o 'Request.*took.*ms,' | sed 's/(.*).*, //' | sed 's/ms,/ms/'
