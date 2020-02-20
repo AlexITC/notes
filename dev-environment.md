@@ -24,6 +24,7 @@
 - Scala and Bazel: https://scalac.io/set-up-bazel-build-tool-for-scala-project/
 - Make tips: https://tech.davis-hansson.com/p/make/
 - Bash strict mode: http://redsymbol.net/articles/unofficial-bash-strict-mode/
+- Install Ansible: https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-ubuntu
 
 # Expose your services running locally to the internet
 - Expose your local server: https://localtunnel.github.io/www/
