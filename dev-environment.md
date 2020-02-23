@@ -25,6 +25,9 @@
 - Make tips: https://tech.davis-hansson.com/p/make/
 - Bash strict mode: http://redsymbol.net/articles/unofficial-bash-strict-mode/
 - Install Ansible: https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#installing-ansible-on-ubuntu
+- Safe paste mode for the terminal: https://cirw.in/blog/bracketed-paste
+- Free services: https://free-for.dev
+
 
 # Expose your services running locally to the internet
 - Expose your local server: https://localtunnel.github.io/www/
