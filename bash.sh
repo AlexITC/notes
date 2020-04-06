@@ -121,4 +121,10 @@ ssh-keygen -l -f ~/.ssh/known_hosts
 grep -o 'Request.*took*.ms'
 
 # Clean logs in the form Request X took Y ms
-cat logs/application.log | grep -v Ping | grep -o 'Request.*took.*ms,' | sed 's/(.*).*, //' | sed 's/ms,/ms/'
+cat logs/application.log | grep -v Ping | grep -o 'Request.*took.*ms,' | sed 's/(.*).*, / /' | sed 's/ms,/ms/'
+
+# print second column on space separated rows
+awk -F " " '{print $2}'
+
+# sort lines by the 3rd column (space separated) using the numerical value
+sort -n --key=3

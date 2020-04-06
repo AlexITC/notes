@@ -24,3 +24,6 @@ scalacOptions in (Compile, console) ~= (_ filterNot (_ == "-Ywarn-unused-import"
 
 # exclude transitive dependencies while importing a library
 libraryDependencies += "com.twitter" %% "finagle-thriftmux" % "6.16.0" exclude("org.slf4j", "slf4j-jdk14")
+
+# debug binary incompatibility errors in plugins when sbt refuses to start
+add `enablePlugins(SbtPlugin)` to the `project/plugins.sbt` and then, `cd project && sbt evicted` will display the problems

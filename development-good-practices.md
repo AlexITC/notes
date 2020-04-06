@@ -72,6 +72,9 @@ TODO: Reconsider to use singular instead, most of my codebases use plural by def
 ### Use singular while naming most columns
 While writing queries, usually a column represents a single value in a row, one counter-example is when dealing with arrays, in which case, you might end up using plural if it makes sense.
 
+### Dealing with nulls
+Consider using `IS NOT DISTINCT FROM`.
+
 ## Other conventions
 TBC.
 
