@@ -32,10 +32,13 @@ ffmpeg -i video.mp4 audio.mp3
 for file in *.mp4; do ffmpeg -i "$file" "$file.mp3"; done
 
 # trim video
-ffmpeg -i input.mp4 -ss 00:00:11 -to 00:01:12 -c copy output.mp4
+ffmpeg -i input.mp4 -ss 00:00:11 -to 00:03:23 -c copy output.mp4
 
 # merge pdfs
 pdftk 01.pdf 02.pdf 03.pdf cat output all.pdf
+
+# find who uses a port
+lsof -i :8000
 
 # find bound ports
 netstat -lntp
@@ -83,6 +86,15 @@ for file in *; do exiftool -all= "$file"; done
 # forward port 3000 from my-server to the local port 30000
 ssh -nNT -L 30000:localhost:3000 my-server
 
+# create a ssh tunnel, local port 10002 is forwarded to the local 1002 port on the server-1
+ssh -nNT -R 1002:localhost:10002 server-1
+
+# generate ssh key
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+# show key fingerprins from ssh known hosts
+ssh-keygen -l -f ~/.ssh/known_hosts
+
 # sync folder from a server over ssh to a local folder
 rsync -avzhe ssh --progress the-server:/home/ubuntu/bcoin-data .
 
@@ -108,14 +120,8 @@ convert paso-3.png -resize 1280x800\! 1280x800/paso-3.png
 # count non-error logs on scala
 echo `expr $(cat logs/application.log | wc -l) - $(grep -E "java|scala|error|exception" logs/application.log | wc -l)`
 
-# create a ssh tunnel, local port 10002 is forwarded to the local 10002 port on the server-1
-ssh -nNT -L 10002:localhost:10002 server-1
-
 # view log for a systemd service
 sudo journalctl -f -u lssd
-
-# show key fingerprins from ssh known hosts
-ssh-keygen -l -f ~/.ssh/known_hosts
 
 # take matched regex only with grep (took 5 ms)
 grep -o 'Request.*took*.ms'

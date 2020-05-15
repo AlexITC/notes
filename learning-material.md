@@ -10,6 +10,8 @@
 - Akka A to Z, webinar: https://www.youtube.com/watch?v=xddHqIcnvHw whitepaper: https://www.lightbend.com/white-papers-and-reports/akka-a-to-z-the-architects-guide-to-designing-building-and-running-reactive-systems
 - Play-anorm architecture: https://old.reddit.com/r/scala/comments/e7x4hi/play_questions_about_the_dao_layer/fa99bi5/
 - Union types with type level programming: https://humanreadablemag.com/issues/1/articles/unionizing-for-pleasure-and-profit
+- Good practices: https://nrinaudo.github.io/scala-best-practices/
+- About JVM Thread pools: https://gist.github.com/AlexITC/6c4935997d45770d0730cc33761eb4f3
 
 # Blockchain
 - https://www.coursera.org/learn/blockchain-basics/
@@ -18,7 +20,8 @@
 - http://earlz.net/view/2017/07/27/1904/the-missing-explanation-of-proof-of-stake-version
 
 # Linux
--  LPI Linux Essentials Certification: https://linuxacademy.com/cp/modules/view/id/346
+- LPI Linux Essentials Certification: https://linuxacademy.com/cp/modules/view/id/346
+- AWK: https://ferd.ca/awk-in-20-minutes.html
 
 # Http
 - Caching Headers: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control
@@ -53,3 +56,4 @@
 - OpenAPI vs gRPC: https://servicesblog.redhat.com/2019/01/31/comparing-openapi-with-grpc/
 - Use Wireguard as home vpn: https://mikkel.hoegh.org/2019/11/01/home-vpn-server-wireguard
 - https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare/
+- How (not) to sign a JSON object: https://latacora.micro.blog/2019/07/24/how-not-to.html
