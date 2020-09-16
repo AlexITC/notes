@@ -29,3 +29,6 @@ docker cp containerid:/foo.txt foo.txt
 
 # Get full container id (using short container id)
 docker inspect -f '{{.Id}}' 9738b4400d9d
+
+# Fix localhost not resolved when using the --host option
+Apparently you need to have this line on the `/etc/nsswitch.conf`, or the `--host` option won't work: `hosts: files dns`

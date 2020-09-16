@@ -39,3 +39,8 @@
 # IDEs
 - Visual Studio Code: https://code.visualstudio.com/
 - IntelliJ: https://www.jetbrains.com/idea/
+
+# Analyze websites
+- https://observatory.mozilla.org
+- https://developers.google.com/speed/pagespeed/insights/
+- https://www.checkbot.io/

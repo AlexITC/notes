@@ -23,17 +23,19 @@
 - LPI Linux Essentials Certification: https://linuxacademy.com/cp/modules/view/id/346
 - AWK: https://ferd.ca/awk-in-20-minutes.html
 
-# Http
+# Http / Web
 - Caching Headers: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control
 - https://www.twilio.com/blog/a-http-headers-for-the-responsible-developer
 - Scan your website for security issues: https://observatory.mozilla.org
 - Scan your website for usability: https://developers.google.com/speed/pagespeed/insights/
 - Resource Oriented Design: https://cloud.google.com/apis/design/resources
+- Stop using JWT for sessions: http://cryto.net/~joepie91/blog/2016/06/13/stop-using-jwt-for-sessions/
 
 # Testing
 - https://samsaffron.com/archive/2019/05/15/tests-that-sometimes-fail
 - https://martinfowler.com/articles/mocksArentStubs.html
 - Fast tests for slow services: why you should use verified fakes: https://codewithoutrules.com/2016/07/31/verified-fakes/
+- https://phauer.com/2019/modern-best-practices-testing-java/
 
 # Misc
 - https://kevv.net/you-probably-dont-need-recaptcha/
@@ -57,3 +59,6 @@
 - Use Wireguard as home vpn: https://mikkel.hoegh.org/2019/11/01/home-vpn-server-wireguard
 - https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare/
 - How (not) to sign a JSON object: https://latacora.micro.blog/2019/07/24/how-not-to.html
+- 10 most common mistakes using kubernetes: https://blog.pipetail.io/posts/2020-05-04-most-common-mistakes-k8s/
+- https://latacora.micro.blog/2018/04/03/cryptographic-right-answers.html
+- File formats reference: fileformats.archiveteam.org/

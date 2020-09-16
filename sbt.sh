@@ -2,6 +2,9 @@
 # start sbt fast
 sbt "set skip in update := true" compile
 
+# skip tests on the assembly task
+sbt "set test in assembly := {}" "assembly"
+
 # enable remote debugging
 sbt -J-Xdebug -J-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005 run
 

@@ -6,6 +6,7 @@ https://ohshitgit.com/
 git config user.name "Alexis Hernandez"
 git config user.email "[EMAIL]"
 git config pull.rebase true
+git config core.sshCommand "ssh -i ~/.ssh/other_key_id_rsa"
 
 # use pgp2 for signing work
 git config --global gpg.program gpg2
