@@ -21,3 +21,7 @@ grant codebase "file:${java.home}/../lib/tools.jar" {
 
 # Never use the URL object
 https://brian.pontarelli.com/2006/12/05/mr-gosling-why-did-you-make-url-equals-suck/
+
+# Generate a heap dump on OutOfMemoryError
+Take the dump to VisualVM
+- java -XX:+HeapDumpOnOutOfMemoryError ...

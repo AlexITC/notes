@@ -12,6 +12,7 @@
 - Union types with type level programming: https://humanreadablemag.com/issues/1/articles/unionizing-for-pleasure-and-profit
 - Good practices: https://nrinaudo.github.io/scala-best-practices/
 - About JVM Thread pools: https://gist.github.com/AlexITC/6c4935997d45770d0730cc33761eb4f3
+- https://blog.softwaremill.com/are-you-sure-your-anyvals-dont-instantiate-5822c04875d3
 
 # Blockchain
 - https://www.coursera.org/learn/blockchain-basics/
@@ -62,3 +63,4 @@
 - 10 most common mistakes using kubernetes: https://blog.pipetail.io/posts/2020-05-04-most-common-mistakes-k8s/
 - https://latacora.micro.blog/2018/04/03/cryptographic-right-answers.html
 - File formats reference: fileformats.archiveteam.org/
+- Faster PostgreSQL Counting: https://www.citusdata.com/blog/2016/10/12/count-performance/
