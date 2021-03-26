@@ -11,6 +11,9 @@ sbt -J-Xdebug -J-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005 ru
 # display dependency tree
 sbt "inspect tree clean"
 
+# display dependency tree on sbt 1.4.x
+sbt dependencyTree
+
 # install libs locally
 set offline := true
 publishM2
@@ -30,3 +33,6 @@ libraryDependencies += "com.twitter" %% "finagle-thriftmux" % "6.16.0" exclude("
 
 # debug binary incompatibility errors in plugins when sbt refuses to start
 add `enablePlugins(SbtPlugin)` to the `project/plugins.sbt` and then, `cd project && sbt evicted` will display the problems
+
+# list classpath dependencies
+sbt "show dependencyClasspathFiles"

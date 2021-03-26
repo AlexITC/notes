@@ -43,6 +43,9 @@ ffmpeg -i demo.webm -r 15 -vf scale=1024:-1 -ss 00:00:03 -to 00:00:06 output2.gi
 # compress video
 ffmpeg -i ipad-error.mp4 -vcodec libx265 -crf 28 ipad-error-new.mp4
 
+# remove audio from video
+ffmpeg -i VIDEO.mp4 -c copy -an VIDEO-new.mp4
+
 # merge pdfs
 pdftk 01.pdf 02.pdf 03.pdf cat output all.pdf
 

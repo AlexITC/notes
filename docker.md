@@ -7,7 +7,7 @@ https://blog.trifork.com/2013/12/24/docker-from-a-distance-the-remote-api/`
 docker build -t my-image .
 
 # Start container exposing its port
-docker run -p 50051:50051 -it alexitc/lssd
+docker run -p 50051:50051 -it my-image
 
 # Start console on container
 docker run -p 50051:50051 --entrypoint "/bin/bash" -it alexitc/lssd

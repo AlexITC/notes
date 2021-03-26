@@ -31,6 +31,7 @@
 - Scan your website for usability: https://developers.google.com/speed/pagespeed/insights/
 - Resource Oriented Design: https://cloud.google.com/apis/design/resources
 - Stop using JWT for sessions: http://cryto.net/~joepie91/blog/2016/06/13/stop-using-jwt-for-sessions/
+- Microsoft API Guidelines: https://github.com/microsoft/api-guidelines
 
 # Testing
 - https://samsaffron.com/archive/2019/05/15/tests-that-sometimes-fail
@@ -64,3 +65,5 @@
 - https://latacora.micro.blog/2018/04/03/cryptographic-right-answers.html
 - File formats reference: fileformats.archiveteam.org/
 - Faster PostgreSQL Counting: https://www.citusdata.com/blog/2016/10/12/count-performance/
+- https://www.citusdata.com/blog/2018/03/14/fun-with-sql-generate-sql/
+- Writing good docs: https://documentation.divio.com/introduction/

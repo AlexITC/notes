@@ -119,7 +119,13 @@ FROM users JOIN roles USING (user_id)
 TBC.
 
 ### Columns referenced by foreign keys must have an index
-While primary keys are always indexed, foreign keys are not, the referenced columns should
+While primary keys are always indexed, foreign keys are not, the referenced columns should to avoid sequential scans when a row is deleted on the referenced table.
+
+### Select queries should have a deterministic order
+Make sure to break ties by a unique column.
+
+### Use case-insensitive sorting on strings
+While retrieving data to be displayed, ASCII order is annoying for users.
 
 ### Monitor progress on long-running updates
 TODO: Move to postgres specific file.

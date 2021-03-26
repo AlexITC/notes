@@ -8,6 +8,7 @@ obj.getClass().getProtectionDomain().getCodeSource().getLocation()
 # visualvm
 - Make sure to install the jdk: `sudo apt install openjdk-8-jdk-headless`
 - Create the policy at `~/.jstatd.all.policy`
+- Parse big dumps: `./bin/visualvm -J-Xmx25g -J-XX:-UseGCOverheadLimit`
 
 ```
 grant codebase "file:${java.home}/../lib/tools.jar" {
@@ -23,5 +24,8 @@ grant codebase "file:${java.home}/../lib/tools.jar" {
 https://brian.pontarelli.com/2006/12/05/mr-gosling-why-did-you-make-url-equals-suck/
 
 # Generate a heap dump on OutOfMemoryError
-Take the dump to VisualVM
+Take the dump to VisualVM, after the error, a file like `java_pid18013.hprof` should be saved in the app's working directory.
 - java -XX:+HeapDumpOnOutOfMemoryError ...
+
+# Parse big memory dumps from eclipse mat
+`./MemoryAnalyzer -vmargs -Xmx20g -XX:-UseGCOverheadLimit`
