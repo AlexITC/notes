@@ -13,3 +13,6 @@ create user: `CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';`
 create database: `create database example;`
 grant privileges to the new user: `GRANT ALL PRIVILEGES ON example . * TO 'newuser'@'localhost';`
 reload privileges: `FLUSH PRIVILEGES;`
+
+## Vertical results
+Use `\G` instead of `;` to display results vertically, like `SELECT * FROM users \G`

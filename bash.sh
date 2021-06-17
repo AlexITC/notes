@@ -15,6 +15,9 @@ Y=2000
 logfile=application.log
 tail -n +$X $logfile | head -n $((Y-X+1))
 
+# install deb from terminal
+sudo dpkg -i installer.deb
+
 # record voice
 arecord filename.wav
 sox -t alsa default filename.wav
@@ -51,6 +54,9 @@ pdftk 01.pdf 02.pdf 03.pdf cat output all.pdf
 
 # rotate pdf (page 1 only)
 pdftk planos.pdf rotate 1west output newplanos.pdf
+
+# take some pages from a pdf
+pdftk document.pdf cat 2-20 output out.pdf
 
 # find who uses a port
 lsof -i :8000
@@ -104,14 +110,23 @@ ssh -nNT -L 30000:localhost:3000 my-server
 # create a ssh tunnel, local port 10002 is forwarded to the local 1002 port on the server-1
 ssh -nNT -R 1002:localhost:10002 server-1
 
+# Dynamic Port Forwarding - socks proxy
+ssh -nNT -D 2000 my-server
+
+`localhost:2000` will be a socks proxy, curl can be used like: `curl --proxy 'socks5://127.0.0.1:2000' https://google.com`
+
 # generate ssh key
-ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+ssh-keygen -t rsa -b 4096 -o -a 100 -C "your_email@example.com"
+ssh-keygen -t ed25519 -a 100
 
 # show key fingerprins from ssh known hosts
 ssh-keygen -l -f ~/.ssh/known_hosts
 
 # sync folder from a server over ssh to a local folder
 rsync -avzhe ssh --progress the-server:/home/ubuntu/bcoin-data .
+
+# sync local folder to a server (results in ~/media/local-folder)
+rsync -avzhe ssh --progress local-folder the-server:~/media/
 
 # sync folder recursively
 rsync --progress --recursive /var/lib/postgresql/9.6/main /mnt/volume_bitcoin_explorer_lite/postgres/
@@ -149,3 +164,18 @@ awk -F " " '{print $2}'
 
 # sort lines by the 3rd column (space separated) using the numerical value
 sort -n --key=3
+
+# Markdown to pdf
+- Install node package: npm install markdown-pdf
+- Convert the doc: ./node_modules/.bin/markdown-pdf /path/to/doc.md
+- The output is stored in the input path as `doc.pdf`
+
+# Simple TCP server
+Suppose you want to make sure that a port can accept connections from external addresses, there are some commands that can be used:
+1. `ncat -l 8080 --keep-open --exec "/bin/cat"`
+2. `socat TCP4-LISTEN:8080,fork EXEC:cat`
+3. `nc -l -p 8080`
+
+Option 1 and 2 return the same data that is received, and option 3 prints what's received, option 3 also works in a single connection only.
+
+Test with `curl ip:8080`.
