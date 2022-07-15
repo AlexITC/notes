@@ -6,9 +6,9 @@
 - delete stack: `pulumi stack rm`
 - help: `pulumi help up` (replace `up` with the desired command)
 - display stack config: `pulumi config`
-- set config entry: `pulumi config set key value'
+- set config entry: `pulumi config set key value`
 - set config secret: `pulumi config set --secret password S3cr37`
-- display output value: `pulumi stack output valueName'
+- display output value: `pulumi stack output valueName`
 - display output secret: `pulumi stack output password --show-secrets`
 - display output as json: `pulumi stack output --json`
 - create empty stack: `pulumi stack init stackName`
