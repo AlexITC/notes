@@ -61,5 +61,8 @@ git fetch --all --prune
 # clone single tag
 git clone -b '1.22' --single-branch --depth 1 https://github.com/google/leveldb.git
 
+# clone with custom ssh key
+git clone git@provider.com:userName/projectName.git --config core.sshCommand="ssh -i ~/location/to/private_ssh_key"
+
 # get current commit hash
 git rev-parse HEAD
