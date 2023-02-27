@@ -64,12 +64,6 @@ sudo sysctl -p
 # link directory
 ln -s /source /link
 
-# remove metadata from photos
-exiftool -all= photo.jpg
-
-# remove metadata from all photos in current directory
-for file in *; do exiftool -all= "$file"; done
-
 # resize unpartitioned volume
 - this must display ext4: `sudo lsblk --fs /dev/disk/by-id/scsi-0DO_Volume_volume-nyc1-01`
 - resize: `sudo resize2fs /dev/disk/by-id/scsi-0DO_Volume_volume-nyc1-01`
@@ -113,9 +107,6 @@ zip --encrypt secure.zip file1 file2 file3
 
 # diff the same repo
 diff -ENwbur repos1/ repos2/
-
-# resize image without keeping aspect ratio
-convert paso-3.png -resize 1280x800\! 1280x800/paso-3.png
 
 # count non-error logs on scala
 echo `expr $(cat logs/application.log | wc -l) - $(grep -E "java|scala|error|exception" logs/application.log | wc -l)`
