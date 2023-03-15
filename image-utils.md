@@ -12,3 +12,6 @@
 ## remove metadata from all photos in current directory
 `for file in *; do exiftool -all= "$file"; done`
 
+## compress image
+`convert -strip -interlace Plane -gaussian-blur 0.05 -quality 85% source.jpg result.jpg`
+
