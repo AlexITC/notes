@@ -15,3 +15,9 @@
 ## compress image
 `convert -strip -interlace Plane -gaussian-blur 0.05 -quality 85% source.jpg result.jpg`
 
+## convert svg to png
+`inkscape -w 200 -h 200 icon.svg -o icon.png`
+
+## convert webp to png
+`convert logo.webp logo.png`
+
