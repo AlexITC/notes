@@ -140,3 +140,7 @@ Suppose you want to make sure that a port can accept connections from external a
 Option 1 and 2 return the same data that is received, and option 3 prints what's received, option 3 also works in a single connection only.
 
 Test with `curl ip:8080`.
+
+# scan pictures and merge them as pdf
+scanimage --batch-prompt --batch-count=6 && convert out1.pnm out2.pnm out3.pnm out4.pnm out5.pnm out6.pnm out.pdf
+
