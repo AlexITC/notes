@@ -16,3 +16,7 @@ requires: `apt install mupdf-tools`
 
 `mutool poster -x 2 input.pdf output.pdf`
 
+## Markdown to pdf
+
+`pandoc -o output.pdf input.md`
+
