@@ -144,3 +144,6 @@ Test with `curl ip:8080`.
 # scan pictures and merge them as pdf
 scanimage --batch-prompt --batch-count=6 && convert out1.pnm out2.pnm out3.pnm out4.pnm out5.pnm out6.pnm out.pdf
 
+# scan a file
+scanimage --format=pdf -p -o file.pdf
+
